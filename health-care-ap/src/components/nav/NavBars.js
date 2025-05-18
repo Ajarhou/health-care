@@ -46,7 +46,9 @@ const NavBars = () => {
             <Nav.Link href="#link">Search</Nav.Link>
             <Nav.Link href="#link">icon (+01) 999 888 7777</Nav.Link>
             <Nav.Link href="#link">
-              <button>contact us</button>
+              <button>
+                contact us <span> > </span>
+              </button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
