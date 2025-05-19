@@ -5,6 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../../Assets/logo.png";
 import "./Nav.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const NavBars = () => {
   return (
@@ -43,8 +46,11 @@ const NavBars = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#link">Contact Us</Nav.Link>
-            <Nav.Link href="#link">Search</Nav.Link>
-            <Nav.Link href="#link">icon (+01) 999 888 7777</Nav.Link>
+            <Nav.Link href="#link"><FontAwesomeIcon icon={faSearch} /></Nav.Link>
+            <Nav.Link href="#link">
+            <FontAwesomeIcon icon={faPhone} className="phone" />
+              (+01) 999 888 7777
+            </Nav.Link>
             <Nav.Link href="#link">
               <button>
                 contact us <span> > </span>
